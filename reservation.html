@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keyword" content="triporteur, vélo, transport de personnes">
+  <title>Top'Chrono - Réservation</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+   integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between">
+          <div>
+        <div><a class="navbar-brand" href="index.html"><img class="imgLogo" src="img/top_chrono.png" alt=""></a></div>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "><i class="fas fa-bars"></i></span>
+        </button>
+      </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Réservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white  " href="voyageur.html">Voyageur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="chauffeur.html">Chauffeur</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--Fin de la balise nav-->
+  </header>
+  <main>
+    <div class="container">
+      <p class="titre">
+        RESERVATION
+      </p>
+      <div class="row ">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 reservationFormulaire bkgFormulaire" >
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="reservationAllerSimple-tab" data-bs-toggle="tab" data-bs-target="#reservationAllerSimple" type="button" role="tab" aria-controls="reservationAllerSimple" aria-selected="true">ALLER SIMPLE</button>
+              <button class="nav-link" id="reservationAllerRetour-tab" data-bs-toggle="tab" data-bs-target="#reservationAllerRetour" type="button" role="tab" aria-controls="reservationAllerRetour" aria-selected="false">ALLER RETOUR</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="reservationAllerSimple" role="tabpanel" aria-labelledby="reservationAllerSimple-tab">
+              <form action="#" id="reservationAllerSimpleForm">
+                <p class="txtCentre">
+                  <label for="reservationDepartAllerSimple"> Adresse de départ : <span class="txtRouge">*</span></label>
+                  <input type="text" id="reservationDepartAllerSimple" name="reservationDepartAllerSimple"
+                    placeholder=" Rue du Commandant Guilbaud, 75016 Paris" required>
+                </p>
+                <p class="txtCentre">
+                  <label for="reservationArriveeAllerSimple"> Adresse d'arrivée : <span
+                      class="txtRouge">*</span></label>
+                  <input type="text" id="reservationArriveeAllerSimple" name="reservationArriveeAllerSimple"
+                    placeholder="Avenue des champs Elysées, 75008 Paris " required>
+                </p>
+                <p class="txtCentre reservationDateHeure">
+                  <label for="reservationDateAllerSimple" id="reservationDateAllerSimpleL"> Date aller: <span class="txtRouge">*</span></label>
+                  <input type="date" name="reservationDateAllerSimple" id="reservationDateAllerSimple" required>
+                  <label for="reservationHeureAllerSimple" id="reservationHeureAllerSimpleL"> A partir de : </label>
+                  <input type="time" name="reservationHeureAllerSimple" id="reservationHeureAllerSimple">
+                </p>
+                <p class="txtCentre" id="reservationIconAllerSimple">
+                  <label for="reservationPassagerAllerSimple"> <i class="fas fa-user-tie"></i> </label>
+                  <input type="number" min="1" max="3" name="reservationPassagerAllerSimple"
+                    id="reservationPassagerAllerSimple">
+                  <label for="reservationBagageAllerSimple"> <i class="fas fa-suitcase"></i> </label>
+                  <input type="number" min="0" max="3" name="reservationBagageAllerSimple"
+                    id="reservationBagageAllerSimple">
+                  <label for="reservationVehiculeAllerSimple">Type de véhicule:</label>
+                  <select name="reservationVehiculeAllerSimple" id="reservationVehiculeAllerSimple">
+                    <option value="">--Choisissez--</option>
+                    <option value="eco">Economique</option>
+                    <option value="TPMR">TPMR</option>
+                    <option value="luxe">Luxe</option>
+                  </select>
+                </p>
+                <p class="txtCentre">
+                  <button class="btnOrange" id="reservationBtnAllerSimple" type="submit"> Consulter le prix </button>
+                </p>
+              </form>
+              <!--Fin du formulaire aller simple-->
+            </div>
+            <div class="tab-pane fade" id="reservationAllerRetour" role="tabpanel" aria-labelledby="reservationAllerRetour-tab">
+              <form action="#" id="reservationAllerRetourForm">
+                <p class="txtCentre">
+                  <label for="reservationDepartAllerRetour"> Adresse de départ : <span class="txtRouge">*</span></label>
+                  <input type="text" name="reservationDepartAllerRetour" id="reservationDepartAllerRetour"
+                    placeholder=" Rue du Commandant Guilbaud, 75016 Paris" required>
+                </p>
+                <p class="txtCentre">
+                  <label for="reservationArriveeAllerRetour"> Adresse d'arrivée : <span
+                      class="txtRouge">*</span></label>
+                  <input type="text" name="reservationArriveeAllerRetour" id="reservationArriveeAllerRetour"
+                    placeholder="Avenue des champs Elysées, 75008 Paris " required>
+                </p>
+                <p class="txtCentre" id="reservationDateAllerRetourDepart">
+                  <label for="reservationDateAllerRetourDepart"> Date aller : <span class="txtRouge">*</span> </label>
+                  <input type="date" name="reservationDateAllerRetourDepart" id="reservationDateAllerRetourDepartInput" required>
+                  <label for="reservationHeureAllerRetourDepart"> A partir de : </label>
+                  <input type="time" name="reservationHeureAllerRetourDepart">
+                </p>
+                <p class="txtCentre" id="reservationHeureAllerRetourRetour">
+                  <label for="reservationDateAllerRetourRetour"> Date retour : <span class="txtRouge">*</span></label>
+                  <input type="date" name="reservationDateAllerRetourRetour" required>
+                  <label for="reservationHeureAllerRetourRetour"> A partir de : </label>
+                  <input type="time" name="reservationHeureAllerRetourRetour">
+                </p>
+                <p class="txtCentre" id="reservationIconAllerRetour" >
+                  <label for="reservationPassagerAllerRetour"> <i class="fas fa-user-tie"></i>
+                  </label>
+                  <input type="number" min="1" max="3" name="reservationPassagerAllerRetour">
+                  <label for="reservationBagageAllerRetour"> <i class="fas fa-suitcase"></i> </label>
+                  <input type="number" min="0" max="3" name="reservationBagageAllerRetour">
+                  <label for="reservationVehiculeAllerRetour">Type de véhicule:</label>
+                  <select name="reservationVehiculeAllerRetour" >
+                    <option value="">--Choisissez--</option>
+                    <option value="eco">Economique</option>
+                    <option value="TPMR">TPMR</option>
+                    <option value="luxe">Luxe</option>
+                  </select>
+                </p>
+                <p class="txtCentre">
+                  <button class="btnOrange" id="reservationBtnAllerRetour" type="submit"> Consultez le prix </button>
+                </p>
+              </form>
+              <!--Fin du formulaire aller retour-->
+            </div>
+            <!--Fin de la balise div reservation aller retour-->
+          </div>  
+          </div>  
+          <!--Fin de la div reservationFormulaire  -->
+          <div class="col-lg-1"></div>
+        </div>
+      <!--Fin de la div row formulairePageReservation-->
+      <div class="row reservationNosFormulesUn">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+        <p class="titre">Nos Formules</p>
+          <div  class="d-flex justify-content-between">
+            <div>
+              <p class="txtCentre txtBleu"> Le pass découvert</p>
+              <img class="reservationPhoto" src="img/PASS.png" style="width: 50%;" alt="">
+              <p class=" txtCentre"> A partir de 25€* la course</p>
+            </div>
+            <div>
+              <p class="txtCentre txtBleu"> Le pass business</p>
+              <img class="reservationPhoto" src="img/CLUB.png" style="width: 50%;" alt="" ">
+              <p class="txtCentre"> A partir de 35€* la course </p>
+            </div>    
+            <div⁄>
+              <p class="txtCentre txtBleu"> Le pass luxe</p>
+              <img class="reservationPhoto" src="img/PASS.png" style="width: 50%;" alt="">
+              <p class="txtCentre"> A partir de 75€* la course </p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <!--Fin de la div reservavtionNosFormulesUn-->
+      <div class="row reservationCarousel">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6 reservationCarousel">
+        <p class="titre">Exemple de nos triporteurs</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/triporteur.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/triporteur1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/triporteur2.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <!--Fin de la div row reservationCarousel-->
+      <div class="row reservationTxtUn">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <p class="titre">Réserver un vélo triporteur rapidement</p>
+          <p class="txtJustifie">
+            Vous souhaitez réserver un vélo ? Découvrez les chauffeurs les plus proches de chez vous. Notre service vous
+            permet de trouver un vélo en quelques clics.Vous pouvez gérer vos réservations directement sur le site, tout
+            en vous assurant d’obtenir le prix de la course le moins cher.</p>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <!--Fin de la div row reservationTxtUn-->
+      <div class="row resaTxtDeux">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <p class="titre">Commander un vélo en toute simplicité</p>
+          <p class="txtJustifie">Sélectionnez votre point de départ et d’arrivée et obtenez le meilleur prix directement
+            dans votre boite
+            mail, en mettant en concurrence tous les chauffeurs. Chaque chauffeur possède sa propre page où vous pourrez
+            voir quel type de vélo il possède et combien de passager il peut prendre en charge.La tarification sera
+            établie avant la commande, vous permettant d’obtenir un prix en toute transparence.</p>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <!--Fin de la div row reservationTxtDeux-->
+      
+    </div>
+    <!--Fin de la div container-->
+  </main>
+  <footer>
+    <div class="accordion accordion-flush container-fluid id=" accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed fondNoir " type="button" data-bs-toggle="collapse"data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <p class="txtFooter">© 2021 Tous droits réservés topchrono.com</p>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse fondNoir"
+                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="row BlocBas">
+                    <div class="col-lg-3 BlocBasContact">
+                        <p class="txtCentre">CONTACT</p>
+                        <p class="txtFooter txtCentre"><i class="fas fa-phone-alt"></i> 09 12 34 56 78</p>
+                        <p class="txtFooter txtCentre"><i class="far fa-envelope"></i> contact@topchrono.fr</p>
+                        <p class="txtFooter txtCentre"><i class="fas fa-map-marker-alt"></i> 187 avenue des champs
+                            élysées 75008
+                            Paris
+                        </p>
+                    </div>
+                    <!--Fin de la div BlocBasContact-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-1 BlocBasInfo">
+                        <p class="txtCentre">INFO</p>
+                        <p class="txtFooter txtCentre"><a href="#">FAQ</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Blog</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">A propos</a></p>
+                    </div>
+                    <!--Fin de la div BlocBasInfo-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2 BlocBasConditions">
+                        <p class="txtCentre">CONDITIONS</p>
+                        <p class="txtFooter txtCentre"><a href="#">Conditions Générales</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Politique de Confidentialité</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Charte Qualité</a></p>
+                    </div>
+                    <!--Fin de la div BlocBasConditions-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3 BlocBasSocial">
+                        <p class="txtCentre">SOCIAL</p>
+                        <p class="txtFooter txtCentre">Suivez-nous pour bénéficier de réductions spéciales et
+                            voyager toujours
+                            moins
+                            cher.</p>
+                        <p class="txtCentre icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </p>
+                    </div>
+                    <!--Fin de la div BlocBasSocial-->
+                    <div class="col-lg-9"></div>
+                    <div class="col-lg-3">
+                        <p class="txtCentre">
+                            <img class="imgApple" src="img/appleStore.png" alt=" Lien vers AppleStore">
+                            <img class="imgGoogle" src="img/googlePlay.png" alt=" Lien vers GooglePlay">
+                        </p>
+                    </div>
+                </div>
+                <!--Fin de la balise div BlocBas-->
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--Appel des fichiers bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

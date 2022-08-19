@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="triporteur, vélo, transport de personnes">
+    <title>Top'Chrono - Voyageur</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid justify-content-between">
+            <div>
+          <div><a class="navbar-brand" href="index.html"><img class="imgLogo" src="img/top_chrono.png" alt=""></a></div>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "><i class="fas fa-bars"></i></span>
+          </button>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="reservation.html">Réservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  " href="#">Voyageur</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="chauffeur.html">Chauffeur</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Fin de la balise nav-->
+    </header>
+    <main>
+      <div class="container voyageur">
+        <p class="titre"> VOYAGEUR </p>
+        <div class="row voyageur">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 voyageurFormulaire bkgFormulaire">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="voyageurConnexion-tab" data-bs-toggle="tab" data-bs-target="#voyageurConnexion" type="button" role="tab" aria-controls="voyageurConnexion" aria-selected="true">CONNEXION</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="voyageurInscription-tab" data-bs-toggle="tab" data-bs-target="#voyageurInscription" type="button" role="tab" aria-controls="voyageurInscription" aria-selected="false">INSCRIPTION</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="voyageurConnexion" role="tabpanel" aria-labelledby="voyageurConnexion-tab">
+                  <form action="#" id="voyageurConnexionFormulaire">
+                    <p class="txtCentre">
+                        <label for="voyageurConnexionMail"> Adresse e-mail <span class="txtRouge">*</span> </label>
+                        <input type="email" id="voyageurConnexionMail" name="voyageurConnexionMail"
+                        placeholder="Entrez votre adresse e-mail" required>
+                    </p>
+                    <p class="txtCentre">
+                        <label for="voyageurConnexionMdp"> Mot de passe <span class="txtRouge">*</span></label>
+                        <input type="text" id="voyageurConnexionMdp" name="voyageurConnexionMdp"
+                        placeholder="Entrez votre mot de passe" required>
+                    </p>
+                    <p class="txtCentre">
+                      <a href="#"> Mot de passe oublié ?</a>
+                    </p>
+                    <p class="txtCentre">
+                      <button class="btnOrange" id="voyageurConnexionBtn" type="submit"> Se Connecter</button>
+                    </p>
+                    <p class="txtCentre">
+                      ----------- ou -----------
+                    </p>
+                    <p class="txtCentre">
+                      <button  class ="btnFB" id="voyageurConnexionFBBtn" type="submit"> <i class="fab fa-facebook-f"></i> Connexion avec
+                        Facebook </button>
+                    </p>
+                  </form>
+                  <!--Fin du formulaire connexion-->
+                </div>
+                <div class="tab-pane fade" id="voyageurInscription" role="tabpanel" aria-labelledby="voyageurInscription-tab">
+                  <form action="#" id="voyageurInscriptionFormulaire">
+                    <p class="txtCentre">
+                      <label for="voyageurInscriptionMail"> Adresse e-mail  <span class="txtRouge">*</span></label>
+                      <input type="email" name="voyageurInscriptionMail" id="voyageurInscriptionMail"
+                        placeholder=" Entrez votre adresse e-mail " required>
+                    </p>
+                    <p class="txtCentre">
+                      <label for="voyageurInscriptionMdp"> Mot de passe <span class="txtRouge">*</span></label>
+                      <input type="text" id="voyageurInscriptionMdp" name="voyageurInscriptionMdp"
+                        placeholder="Créez votre mot de passe" required>
+                    </p>
+                    <p class="txtCentre">
+                      <label for="voyageurInscriptionMdpRepeat"> Répétez le mot de passe <span class="txtRouge">*</span> </label>
+                      <input type="text" id="voyageurInscriptionMdpRepeat" name="voyageurInscriptionMdpRepeat"
+                        placeholder="Répétez votre mot de passe" required>
+                    </p>
+                    <p class="txtCentre">
+                      <input id="voyageurCheckboxNewsletters" type="checkbox" required><span class="txtRouge">*</span> J'accepte les rares newsletters
+                    </p>
+                    <p class="txtCentre">
+                      <input id="voyageurCheckboxCG" type="checkbox" required> <span class="txtRouge">*</span> J'accepte les <a href="#"> Conditions Générales</a>
+                    </p>
+                    <p class="txtCentre">
+                      <button class="btnOrange" id="voyageurInscriptionBtn" type="submit"> Continuer </button>
+                    </p>
+                    <p class="txtCentre">
+                      ----------- ou -----------
+                    </p>
+                    <p class="txtCentre">
+                      <button class="btnFB" id="voyageurInscriptionFBBtn" type="submit"> <i class="fab fa-facebook-f"></i> Continuer avec
+                        Facebook </button>
+                    </p>
+                  </form>
+                  <!-- Fin du formulaire Inscription-->
+                </div>
+              </div>
+            </div>
+            <!--Fin de la div voyageurFormulaire-->
+
+              
+            <div class="col-lg-5 voyageurPhoto">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/voyageur1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/VOYAGEUR2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin de la div voyageurPhoto-->
+            <div class="col-lg-1"></div>
+        </div>
+        <!--Fin de la div voyageur-->
+    </div>
+    <!--Fin de la div contrainer-->
+           
+   </main>
+   <footer>
+    <div class="accordion accordion-flush container-fluid" id=" accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed fondNoir " type="button" data-bs-toggle="collapse"data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <p class="txtFooter">© 2021 Tous droits réservés topchrono.com</p>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse fondNoir"
+                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="row BlocBas">
+                    <div class="col-lg-3 BlocBasContact">
+                        <p class="txtCentre">CONTACT</p>
+                        <p class="txtFooter txtCentre"><i class="fas fa-phone-alt"></i> 09 12 34 56 78</p>
+                        <p class="txtFooter txtCentre"><i class="far fa-envelope"></i> contact@topchrono.fr</p>
+                        <p class="txtFooter txtCentre"><i class="fas fa-map-marker-alt"></i> 187 avenue des champs
+                            élysées 75008
+                            Paris
+                        </p>
+                    </div>
+                    <!--Fin de la div BlocBasContact-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-1 BlocBasInfo">
+                        <p class="txtCentre">INFO</p>
+                        <p class="txtFooter txtCentre"><a href="#">FAQ</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Blog</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">A propos</a></p>
+                    </div>
+                    <!--Fin de la div BlocBasInfo-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2 BlocBasConditions">
+                        <p class="txtCentre">CONDITIONS</p>
+                        <p class="txtFooter txtCentre"><a href="#">Conditions Générales</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Politique de Confidentialité</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Charte Qualité</a></p>
+                    </div>
+                    <!--Fin de la div BlocBasConditions-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3 BlocBasSocial">
+                        <p class="txtCentre">SOCIAL</p>
+                        <p class="txtFooter txtCentre">Suivez-nous pour bénéficier de réductions spéciales et
+                            voyager toujours
+                            moins
+                            cher.</p>
+                        <p class="txtCentre icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </p>
+                    </div>
+                    <!--Fin de la div BlocBasSocial-->
+                    <div class="col-lg-9"></div>
+                    <div class="col-lg-3">
+                        <p class="txtCentre">
+                            <img class="imgApple" src="img/appleStore.png" alt=" Lien vers AppleStore">
+                            <img class="imgGoogle" src="img/googlePlay.png" alt=" Lien vers GooglePlay">
+                        </p>
+                    </div>
+                </div>
+                <!--Fin de la balise div BlocBas-->
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--Appel des fichiers bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

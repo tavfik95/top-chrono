@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="triporteur, vélo, transport de personnes">
+    <title>Top'Chrono - Accueil</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid ">
+                <div>
+                    <div>
+                        <a class="navbar-brand" href="#"><img class="imgLogo" src="img/top_chrono.png" alt=""></a>
+                    </div>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "><i class="fas fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#"><i
+                                    class="fas fa-home"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="reservation.html">Réservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  " href="voyageur.html">Voyageur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="chauffeur.html">Chauffeur</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fin de la balise nav-->
+    </header>
+    <main>
+        <div class="container">
+            <p class="titre" id="date"></p>
+            <!-- <div class="row ">
+                <div class="accueilFormulaire">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div id="accueilFormulaireRapide" class="bkgFormulaire">
+                            <p class="txtCentre txtGras">Tester nos services en reservant une course dès maintenant </p>
+                            <form action="#" id="formReservationRapide">
+                                <p class="txtCentre">
+                                    <label for="accueilDepart"> Adresse de départ : <span class="txtRouge">*</span></label>
+                                    <input type="text" name="accueilDepart" id="accueilDepart"
+                                        placeholder=" Rue du Commandant Guilbaud, Paris 16" required> </p>
+                                <p class="txtCentre">
+                                    <label for="accueilArrivee"> Adresse d'arrivée : <span class="txtRouge">*</span></label>
+                                    <input type="text" name="accueilArrivee" id="accueilArrivee"
+                                        placeholder="Avenue des champs Elysées, Paris 8" required> </p>
+                                <p class="txtCentre">
+                                    <label for="accueilTime"></label> A partir de :
+                                    <input type="time" name="accueilTime" id="accueilTime">
+                                    <label for="accueilPassager"><i class="fas fa-user"></i> :
+                                    </label>
+                                    <input id="accueilPassager" type="number" min="1" max="3" name="accueilPassager">
+                                </p>
+                                <p class="txtCentre">
+                                    <button class="btnOrange" id="accueilBtnResa" type="submit"> Consulter le
+                                        prix</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div> -->
+                    <!--Fin de la div accueilFormulaireRapide-->
+                    <!-- <div class=" col-lg-5 accueilPhoto my-auto img-rounded">
+                        <img class="carteParis img-responsive" src="img/map_paris.png" style="width: 100%;" alt="">
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div> -->
+                <!--Fin de la div accueilPhoto-->
+            <!-- </div> -->
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <div id="accueilFormulaireRapide" class="bkgFormulaire">
+                        <p class="txtCentre txtGras">Tester nos services en reservant une course dès maintenant </p>
+                        <form action="#" id="formReservationRapide">
+                            <p class="txtCentre">
+                                <label for="accueilDepart"> Adresse de départ : <span class="txtRouge">*</span></label>
+                                <input type="text" name="accueilDepart" id="accueilDepart"
+                                    placeholder=" Rue du Commandant Guilbaud, Paris 16" required> </p>
+                            <p class="txtCentre">
+                                <label for="accueilArrivee"> Adresse d'arrivée : <span class="txtRouge">*</span></label>
+                                <input type="text" name="accueilArrivee" id="accueilArrivee"
+                                    placeholder="Avenue des champs Elysées, Paris 8" required> </p>
+                            <p class="txtCentre">
+                                <label for="accueilTime"></label> A partir de :
+                                <input type="time" name="accueilTime" id="accueilTime">
+                                <label for="accueilPassager"><i class="fas fa-user"></i> :
+                                </label>
+                                <input id="accueilPassager" type="number" min="1" max="3" name="accueilPassager">
+                            </p>
+                            <p class="txtCentre">
+                                <button class="btnOrange" id="accueilBtnResa" type="submit"> Consulter le prix</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5"> 
+                    <img class="carteParis img-responsive" src="img/map_paris.png" style="width: 100%;" alt="">
+                </div>
+                <div class="col-lg-1"></div>
+
+            </div>
+
+            <div class="row accueilQuiSommesNous">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 txtAccueilQuiSommesNous">
+                    <p class="titre">Qui sommes nous ?</p>
+                    <p class="txtJustifie">Créer en 2014 par deux passionnés du vélo. Le mouvement est au cœur de nos
+                        activités. C'est notre raison d'être. C'est ce qui nous anime. C'est ce qui nous donne envie de
+                        nous lever chaque matin. C'est cette idée qui nous pousse à réinventer constamment les
+                        déplacements. Pour vous. Pour toutes les destinations qui vous attendent. Pour tout ce dont vous
+                        avez besoin. Pour tous vos moyens de gagner de l'argent. Partout dans le monde. En temps réel.
+                        Au rythme de l'instant présent.</p>
+                </div>
+                <!--Fin de la div txtAccueilQuiSommesNous-->
+                <div class="col-lg-1"></div>
+            </div>
+            <!--Fin de la div accueilQuiSommesNous-->
+            <div class="row accueilCommentCaMarche">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 txtAccueilCommentCaMarche">
+                    <p class="titre">Comment ça marche ?</p>
+                    <img src="img/commentCaMarche.png" alt="" style="width: 100%;">
+                </div>
+                <!--Fin de la div txtAccueilCommentCaMarche-->
+                <div class="col-lg-1"></div>
+            </div>
+            <!--Fin de la div accueilCommentCaMarche-->
+            <div class="row accueilCovid">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 txtAccueilCovid">
+                    <p class="titre"> Recommandation Sanitaire</p>
+                    <p class="txtJustifie">
+                        Comme annoncé par le Gouvernement, nous avons tous un rôle à jouer pour limiter la propagation
+                        du virus. Restez prudent et limitez vos déplacements. Continuez également à adopter les gestes
+                        barrières : tousser dans son coude, ne pas serrer la main ni faire la bise, se tenir à distance
+                        des autres, se laver les mains régulièrement.
+                    </p>
+                    <p class="txtJustifie">
+                        Quand vous vous déplacez avec Uber, respectez les consignes du Gouvernement suivantes :
+                    </p>
+                    <ul>
+                        <li>Le port du masque est obligatoire</li>
+                        <li>Lavez-vous les mains avant et après la course.</li>
+                    </ul>
+                    <p class="txtJustifie">
+                        La responsabilité de l’ensemble de nos utilisateurs est essentielle. C’est pourquoi nous
+                        encourageons les chauffeurs à annuler les courses s’ils ne se sentent pas en sécurité, et
+                        particulièrement si un passager ne porte pas de masque.
+                    </p>
+                    <p class="txtJustifie">
+                        Pour en savoir plus, rendez vous sur le site web du <a
+                            href="https://www.gouvernement.fr/info-coronavirus"> Gouvernement</a> et sur le site web de
+                        <a href="https://www.euro.who.int/fr/home">l'Organisation mondiale de la Santé</a>.
+                    </p>
+                </div>
+                <!--Fin de la div txtAccueilCovid-->
+                <div class="col-lg-1"></div>
+            </div>
+            <!--Fin de la div accueilCovid-->
+            <div class="row accueilNosPartenaires">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 logoAccueilNosPartenaires">
+                    <p class="titre">Nos partenaires : </p>
+                    <div id="accueilImgPartenaireUn">
+                        <img id="accueilLogoEngie" src="img/engie.png" alt="logo Engie">
+                        <img id="accueilLogoEdf" src="img/edf.png" alt="logo EDF">
+                        <img id="accueilLogoSG" src="img/logo-societe-generale.png" alt="logo Société Générale">
+                        <img id="accueilLogoTF1" src="img/tf1.png" alt="logo TF1">
+                    </div>
+                    <div id="accueilImgPartenaireDeux">
+                        <img id="accueilLogoMairie" src="img/marie_paris.png" alt="logo Mairie de Paris">
+                        <img id="accueilLogoPSG" src="img/Paris_Saint-Germain_Logo.png" alt="logo PSG">
+                        <img id="accueilLogoFranceBleu" src="img/francebleu.png" alt="logo France Bleu">
+                        <img id="accueilLogoPSA" src="img/psa.png" alt="logo PSA">
+                    </div>
+                </div>
+                <!--Fin de la div logoAccueilNosPartenaires-->
+                <div class="col-lg-1"></div>
+            </div>
+            <!--Fin de la div accueilNosPartenaires-->
+        </div>
+        <!--Fin de la div container-->
+    </main>
+    <footer>
+        <div class="accordion accordion-flush container-fluid id=" accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed fondNoir " type="button" data-bs-toggle="collapse"data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <p class="txtFooter">© 2021 Tous droits réservés topchrono.com</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse fondNoir"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="row BlocBas">
+                        <div class="col-lg-3 BlocBasContact">
+                            <p class="txtCentre">CONTACT</p>
+                            <p class="txtFooter txtCentre"><i class="fas fa-phone-alt"></i> 09 12 34 56 78</p>
+                            <p class="txtFooter txtCentre"><i class="far fa-envelope"></i> contact@topchrono.fr</p>
+                            <p class="txtFooter txtCentre"><i class="fas fa-map-marker-alt"></i> 187 avenue des champs
+                                élysées 75008
+                                Paris
+                            </p>
+                        </div>
+                        <!--Fin de la div BlocBasContact-->
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1 BlocBasInfo">
+                            <p class="txtCentre">INFO</p>
+                            <p class="txtFooter txtCentre"><a href="#">FAQ</a></p>
+                            <p class="txtFooter txtCentre"><a href="#">Blog</a></p>
+                            <p class="txtFooter txtCentre"><a href="#">A propos</a></p>
+                        </div>
+                        <!--Fin de la div BlocBasInfo-->
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2 BlocBasConditions">
+                            <p class="txtCentre">CONDITIONS</p>
+                            <p class="txtFooter txtCentre"><a href="#">Conditions Générales</a></p>
+                            <p class="txtFooter txtCentre"><a href="#">Politique de Confidentialité</a></p>
+                            <p class="txtFooter txtCentre"><a href="#">Charte Qualité</a></p>
+                        </div>
+                        <!--Fin de la div BlocBasConditions-->
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-3 BlocBasSocial">
+                            <p class="txtCentre">SOCIAL</p>
+                            <p class="txtFooter txtCentre">Suivez-nous pour bénéficier de réductions spéciales et
+                                voyager toujours
+                                moins
+                                cher.</p>
+                            <p class="txtCentre icon">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </p>
+                        </div>
+                        <!--Fin de la div BlocBasSocial-->
+                        <div class="col-lg-9"></div>
+                        <div class="col-lg-3">
+                            <p class="txtCentre">
+                                <img class="imgApple" src="img/appleStore.png" alt=" Lien vers AppleStore">
+                                <img class="imgGoogle" src="img/googlePlay.png" alt=" Lien vers GooglePlay">
+                            </p>
+                        </div>
+                    </div>
+                    <!--Fin de la balise div BlocBas-->
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!--Appel des fichiers bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

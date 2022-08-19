@@ -1,0 +1,499 @@
+/* Appel de la font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+/* Initialisation du body */
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/******************** CSS commun à tous les pages *****************/
+
+/*Mise en forme du main*/
+main{
+    height: auto;
+    background-color: lightgrey ;
+    border-width: 3px;
+    border-top-style: outset;
+    border-top-color: darkgrey;
+    border-bottom-style: outset;
+    border-bottom-color: darkgrey;
+}
+
+/* Bordure des formulaires et photos */
+#accueilFormulaireRapide, .accueilPhoto img,.reservationFormulaire, .reservationCarousel img, #contactFormulaire, .contactPhoto img, .voyageurFormulaire, .voyageurPhoto img, .chauffeurFormulaire, .chauffeurPhoto img, .formulaireChauffeur{
+    border-radius: 5px;
+    border-width: 3px;
+    border-left-style: outset;
+    border-left-color: darkgrey;
+    border-top-style: outset;
+    border-top-color: darkgrey;
+    border-right-style: outset;
+    border-right-color: black;
+    border-bottom-style: outset;
+    border-bottom-color: black;
+    
+}
+
+/* Couleur de fond des formulaire*/
+.bkgFormulaire{
+    background-color: rgba(1, 1, 1, 0.2);
+}
+
+/* Mise en forme du header du nav et du footer*/
+header{
+    background-color: black;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.navbar-nav{
+    margin-left: 40vh;
+}
+
+.imgLogo{
+    width: 25%;
+}
+footer{
+    color: white;
+}
+
+footer{
+    background-color: black
+}
+
+footer a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 97, 31)
+}
+
+.txtFooter{
+    font-size: 0.8em;
+}
+
+/*Couleurs et taille logo footer*/
+
+/* Parametre de couleur de fond du footer*/
+/* Couleur de fond noir*/
+.fondNoir{
+    background-color: black;
+    color: white;
+}
+
+/* Couleur de fond noir sur le bouton accordion*/
+.accordion-button:not(.collapsed){
+    background-color: black;
+    color: white;
+}
+
+
+.icon{
+    font-size: 1.2em;
+}
+
+footer .icon a{
+    color: white;
+}
+
+.fa-instagram:hover{
+    color: rgb(131,58,180);
+}
+
+.fa-facebook-f:hover{
+    color: rgb(59, 89, 152);
+}
+
+.fa-twitter:hover{
+    color: rgb(0, 172, 238);
+}
+
+.fa-linkedin:hover{
+    color: rgb(14, 118, 168);
+}
+.imgApple, .imgGoogle{
+    width: 35%;
+}
+
+.imgApple:hover, .imgGoogle:hover{
+    cursor: pointer;
+    width: 50%;
+}
+
+/* Mise en forme des titres */
+.titre{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(1, 173, 151);
+    margin-top: 3vh;
+
+}
+
+.sousTitre{
+    margin: 2vh 0;
+}
+
+a{
+    color: black;
+}
+
+/* Mise en forme des textes  */
+.txtCentre{
+    text-align: center;
+}
+
+.txtJustifie{
+    text-align: justify;
+}
+
+.txtBleu{
+    color: rgb(1, 173, 151);
+}
+
+.txtRouge{
+    color:red;
+}
+.txtBlanc{
+    color: white;
+}
+.txtGras{
+    font-weight: bolder;
+}
+
+.fondOrange{
+    background-color: rgb(255, 97, 31);
+    color: white;
+    width: 58vh;
+}
+
+/* Mise en forme des boutons  */
+.btnOrange{
+    background-color: rgb(255, 97, 31);
+    color: white;
+}
+
+.btnFB{
+    background-color: rgb(59, 89, 152);
+    color: white;
+}
+
+/* Couleurs des onglets des formulaires */
+#reservationAllerSimple-tab, #reservationAllerRetour-tab, #voyageurConnexion-tab, #voyageurInscription-tab, #chauffeurConnexion-tab, #chauffeurInscription-tab{
+    color: black;
+}
+
+#reservationAllerSimple-tab:focus, #reservationAllerRetour-tab:focus, #voyageurConnexion-tab:focus, #voyageurInscription-tab:focus, #chauffeurConnexion-tab:focus, #chauffeurInscription-tab:focus{
+    color:rgb(255, 97, 31);
+    font-weight: bolder;
+}
+
+/*Bordure des inputs*/
+input{
+  border: 1px solid black;  
+}
+
+/* positionnement des photos page contact, voyageur, chauffeur */
+.contactPhoto, .voyageurPhoto, .chauffeurPhoto{
+    display: flex;
+    align-items: center;
+    margin: 0 3vh 3vh 3vh;
+}
+
+/* Mise en forme page accueil */
+#accueilFormulaireRapide{
+    padding: 5vh;
+    font-size: 0.9em;
+}
+
+
+.accueilPhoto{
+    width: 36%;
+}
+#accueilDepart, #accueilArrivee{
+    width: 100%;
+}
+
+/* .accueilPhoto{
+    margin-left: 14vh;
+   
+} */
+
+/* Mise en forme des inputs et labels */
+label#accueilPassager, input #accueilPassager{
+    margin-left: 4vh;
+}
+
+/* Dimensionnement et positionnement des div partenaires */
+#accueilImgPartenaireUn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 6vh;
+    margin-right: 12vh;
+}
+
+#accueilLogoEdf, #accueilLogoTF1{
+    width: 15%;
+    height: 50%;
+}
+
+#accueilLogoEngie, #accueilLogoSG{
+    width: 20%;
+}
+
+#accueilImgPartenaireDeux{
+    margin-left: 5vh;
+    margin-right: 7vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#accueilLogoMairie, #accueilLogoPSG, #accueilLogoFranceBleu{
+    width: 10%;
+}
+
+#accueilLogoPSA{
+    width:13%
+}
+
+/*Mise en forme page reservation*/
+/* Dimensionnement et positionnement des inputs du formulaire */
+#reservationDepartAllerSimple, #reservationArriveeAllerSimple, #reservationDepartAllerRetour, #reservationArriveeAllerRetour{
+    width: 50%;
+}
+
+#reservationDateAllerSimple, #reservationArriveeAllerSimple, #reservationArriveeAllerRetour{
+    margin-left: 1.5vh;
+}
+
+#reservationDateAllerRetourDepart{
+    margin-left: 3vh;
+}
+
+#reservationAllerSimpleForm, #reservationAllerRetourForm{
+    margin: 2vh 0 0 0;
+}
+
+#reservationIconAllerRetour, #reservationIconAllerSimple{
+    margin-left: 10vh;
+}
+
+.reservationPhoto{
+    margin-left: 13vh;
+    margin-bottom: 1vh;
+}
+
+
+.reservationCarousel{
+    margin-bottom: 2vh;
+}
+
+/* Mise en forme de la page Contact */
+#contactFormulaire{
+    height: auto;
+    padding: 2vh;
+    margin: 0 -3vh 2vh -3vh;
+}
+
+/* Positionnement des labels et inputs dans le formulaire */
+#contactNom, #contactMail, #contactSujet{
+    width: 95%;
+}
+
+#contactMsg{
+    width: 95%;
+    height: 27vh;
+}
+
+/* Mise en forme page voyageur */
+.voyageurFormulaire{
+    height: auto;
+    padding: 2vh;
+    margin: 0 0 2vh 0;
+}
+
+/* Dimensionnement et positionnement des inputs */
+#voyageurConnexionMail, #voyageurConnexionMdp, #voyageurInscriptionMail, #voyageurInscriptionMdp, #voyageurInscriptionMdpRepeat{
+    width: 90%;
+}
+
+#voyageurCheckboxNewsletters, #voyageurCheckboxCG{
+    margin-left: 2.5vh;
+}
+
+#voyageurConnexionFormulaire, #voyageurInscriptionFormulaire{
+    padding: 2vh 0 0 0 ;
+}
+
+/* Mise en forme page chauffeur */
+.chauffeurFormulaire{
+    height: auto;
+    padding: 2vh;
+    margin: 0 0 2vh 0;
+   
+}
+/* Dimensionnement et positionnement des inputs */
+#chauffeurConnexionMail, #chauffeurConnexionMdp{
+    width: 90%;
+}
+
+#chauffeurConnexionFormulaire, #chauffeurInscriptionText{
+    padding: 2vh 0 0 0 ;
+}
+
+#voyageurInscriptionBtn a:hover{
+    color: white;
+}
+
+/* Mise en forme du boutton inscription chauffeur */
+#chauffeurInscriptionBtn{
+    width: 50%;
+    margin-left: 18vh;
+    border-width: 2px;
+    border-style: outset;
+    border-color: darkgrey;
+    border-top-style: outset;
+    border-top-color: darkgrey;
+    border-right-style: outset;
+    border-right-color: black;
+    border-bottom-style: outset;
+    border-bottom-color: black;
+    
+}
+#chauffeurInscriptionBtn a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Mise en forme de la page formulaire chauffeur */
+.formulaireChauffeur{
+    height: auto;
+    padding: 2vh;
+    margin: 0 0 2vh 0;
+}
+
+.formulaireChauffeur input{
+    margin: 1vh 0;
+}
+
+.formulaireChauffeur label, .formulaireChauffeur p{
+    font-size: 0.9em;
+}
+#coordonnesUn, #infoPersoTrois, #identifiantsUn, #identifiantsDeux{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.photoTri{
+    height: 25vh;
+    width: 147vh;
+    margin-bottom: 2vh;
+    opacity: 0.5;
+}
+
+#btnFooter{
+    display: flex;
+    justify-content: center;
+}
+
+.voyageur, .chauffeur{
+    height: 78vh;
+}
+
+.reservationNosFormulesUn{
+    display: flex;
+    align-items: center;
+}
+/* mediaqueries */
+@media (max-width: 1400px){
+    .accueilPhoto{
+        width: 45%;    
+        margin-left: 1vh;
+    }
+    #chauffeurInscriptionBtn{
+        margin-left: 16vh;
+    }
+}
+
+@media (max-width: 1200px){
+    .accueilPhoto{
+        width: 47%;    
+        margin-left: -1vh;
+    }
+    #chauffeurInscriptionBtn{
+        margin-left: 13vh;
+    }
+}
+
+@media (max-width: 991px){
+    .fa-bars{
+        margin-left: 12vh;
+    }
+    .fa-home{
+        margin-left: 5vh;
+    }
+    .carteParis{
+        margin-left: 3vh;
+    }
+    .accueilPhoto{
+       margin: 0 0 0 3vh;
+       width: 100%;
+   }
+   .imgApple, .imgGoogle{
+       width: 10%;
+   }  
+   .imgApple:hover, .imgGoogle:hover{
+    width: 15%;
+    }  
+    #accueilFormulaireRapide{
+        width: 100%;
+        margin: 0 0 3vh 3vh;
+    }
+
+    .contactPhoto, .voyageurPhoto, .chauffeurPhoto{
+        position: relative;
+        right: 3vh;
+    }
+    #reservationDateAllerRetourDepart{
+        margin-left: 10vh;
+    }
+    #reservationHeureAllerRetourRetour{
+        margin-left: 7vh;
+    }
+    #reservationIconAllerRetour, #reservationIconAllerSimple{
+        margin-left: 14vh;
+    }
+    .reservationNosFormulesUn{
+        display: flex;
+        justify-content: center;
+    }
+    .reservationBusiness, .reservationDecouverte, .reservationClub{
+        width: 35%;
+    }
+    .reservationCarousel{
+        width: 80%;
+        margin-left: 13vh;
+    }
+
+    .reservationDecouverte, .reservationBusiness, .reservationClub{
+        margin-left: -22vh;
+    }
+    
+}
+
+button{
+    color: white;
+}

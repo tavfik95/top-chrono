@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="triporteur, vélo, transport de personnes">
+    <title>Top'Chrono - Chauffeur</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid justify-content-between">
+                <div>
+              <div><a class="navbar-brand" href="index.html"><img class="imgLogo" src="img/top_chrono.png" alt=""></a></div>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "><i class="fas fa-bars"></i></span>
+              </button>
+            </div>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="reservation.html">Réservation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white  " href="voyageur.html">Voyageur</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white " href="chauffeur.html">Chauffeur</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!--Fin de la balise nav-->
+    </header>
+    <main>
+        <div class="container">
+            <p class="titre"> FORMULAIRE D'INSCRIPTION </p>
+            <div class="row ">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 formulaireChauffeur bkgFormulaire">
+            <form action="#" id="formulaireChauffeurCoordonnees">
+                <p class="fondOrange sousTitre">
+                    COORDONNÉES
+                </p>
+            <div class="row formulaireChauffeurCoordonneesUn">
+                <div class="col-lg-1">
+                    <label for="coordonnesGenre">Gérant</label>
+                </div>
+                <div class="col-lg-1">
+                    <select name="coordonnesGenre" id="coordonnesGenre">
+                        <option value="mr">M.</option>
+                        <option value="Mme">Mme</option>
+                        <option value="Mlle">Mlle</option>
+                    </select>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1">
+                    <label for="coordonneesPrenom"> Prenom 
+                    </label>
+                </div>
+                <div class="col-lg-2">
+                    <input type="text" name="coordonneesPrenom" id="coordonneesPrenom">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1">
+                    <label for="coordonneesNom"> Nom 
+                    </label>
+                </div>
+                <div class="col-lg-2">
+                    <input type="text" name="coordonneesNom" id="coordonneesNom">
+                </div>
+            </div>
+            <!-- Fin de la div formulaireChauffeurCoordonneesUn-->
+            <div class="row formulaireChauffeurCoordonneesDeux">
+                <div class="col-lg-3">
+                    <label for="coordonneesTel"> Téléphone <span class="txtRouge">*</span>
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <input type="tel" name="coordonneesTel" id="coordonneesTel" required>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <!-- Fin de la div formulaireChauffeurCoordonneesDeux-->
+            <div class="row formulaireChauffeurCoordonneesTrois">
+                <div class="col-lg-3">
+                    <label for="coordonneesAdresse"> Adresse <span class="txtRouge">*</span>
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" name="coordonneesAdresse" id="coordonneesAdresse" required>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <!--Fin de la div formulaireChauffeurCoordonneesTrois-->
+            <div class="row formulaireChauffeurCoordonneesQuatre">
+                <div class="col-lg-3">
+                    <label for="coordonneesVille"> Ville <span class="txtRouge">*</span>
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" name="coordonneesVille" id="coordonneesVille" required>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <!--Fin de la div formulaireChauffeurCoordonneesQuatre-->
+            <p class="fondOrange sousTitre">
+                INFORMATIONS PROFESSIONNELLES
+            </p>
+            <div class="row formulaireChauffeurInfoPersoUn">
+                <div class="col-lg-3">
+                    <label for="infoPersoNom"> Dénomination Sociale <span class="txtRouge">*</span>
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" name="infoPersoNom" id="infoPersoNom" required>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <!--Fin de la div formulaireChauffeurInfoPersoUn-->
+            <div class="row formulaireChauffeurInfoPersoDeux">
+                <div class="col-lg-3">
+                    <label for="infoPersoCapital"> Montant du Capital <span class="txtRouge">*</span>
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" name="infoPersoCapital" id="infoPersoCapital" placeholder="montant en €" required>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <!--Fin de la div formulaireChauffeurInfoPersoDeux-->
+            <div class="row formulaireChauffeurInfoPersoTrois">
+                <div class="col-lg-1">
+                    <label for="infoPersoRcsRn">RCS/RN </label>
+                </div>
+                <div class="col-lg-1">
+                    <select name="infoPersoRcsRn" id="infoPersoRcsRn">
+                        <option value="Rcs">RCS</option>
+                        <option value="Rn">RN</option>
+                    </select>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1">
+                    <label for="infoPersoVille"> Ville </label>
+                </div>
+                <div class="col-lg-2">
+                    <input type="text" name="infoPersoVille" id="infoPersoVille">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1">
+                    <label for="infoPersoSiren"> SIREN </label>
+                </div>
+                <div class="col-lg-2">
+                    <input type="text" name="infoPersoSiren" id="infoPersoSiren">
+                </div>
+            </div>
+            <!-- Fin de la div formulaireChauffeurInfoPersoTrois-->
+            <div class="row formulaireChauffeurInfoPersoQuatre">
+                <div class="col-lg-6">
+                    <p>
+                        Assujetti à la TVA
+                        <label for="infoPersoTvaOui"> Oui </label>
+                        <input type="checkbox" name="infoPersoTvaOui">
+                        <label for="infoPersoTvaNon"> Non </label>
+                        <input type="checkbox" name="infoPersoTvaNon">
+                    </p>
+                </div>
+                
+                <div class="col-lg-6"></div>
+            </div>
+            <!--Fin de la div formulaireChauffeurInfoPersoQuatre-->
+            <div class="row formulaireChauffeurInfoPersoCinq">
+                <div class="col-lg-3">
+                    <label for="infoPersoVilleStationnement"> Ville de Stationnement
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" name="infoPersoVilleStationnement">
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <!--Fin de la div formulaireChauffeurInfoPersoCinq-->
+            <p class="fondOrange sousTitre">
+                VOS IDENTIFIANTS
+            </p>
+            <div class="row identifiantsUn">
+                <div class="col-lg-2">
+                    <label for="identifiantsEmail"> E-mail <span class="txtRouge">*</span></label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="email" name="identifiantsEmail" id="identifiantsEmail" required>
+                </div>
+                <div class="col-lg-2">
+                    <label for="identifiantsEmailRepeat"> Retapez <span class="txtRouge">*</span></label>
+                </div>
+                <div class="col-lg-4">
+                    <input type="email" name="identifiantsEmailRepeat" id="identifiantsEmailRepeat" required>
+                </div>
+            </div>
+                <!--Fin de div identifiantsUn-->
+                <div class="row identifiantsDeux">
+                    <div class="col-lg-2">
+                        <label for="identifiantsMdp"> Mot de Passe <span class="txtRouge">*</span></label>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="email" name="identifiantsMdp" id="identifiantsMdp" required>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="identifiantsMdpRepeat"> Retapez <span class="txtRouge">*</span></label>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="email" name="identifiantsMdpRepeat" id="identifiantsMdpRepeat" required>
+                    </div>
+                </div>
+                    <!--Fin de div identifiantsDeux-->
+                            
+            <div class="row identifiantsTrois">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <p class="txtCentre">
+                        <input id="chauffeurCheckboxNewsletters" type="checkbox" required> <span class="txtRouge">*</span> J'accepte les rares newsletters
+                    </p>
+                    <p class="txtCentre">
+                        <input id="chauffeurCheckboxCG" type="checkbox" required> <span class="txtRouge">*</span> J'accepte les <a href="#"> Conditions Générales</a>
+                    </p>
+                      <p class="txtCentre"><button class="btnOrange">Envoyer mon formulaire d'affiliation </button></p>
+                </div>
+                <!--Fin de la div identifiantTrois-->
+                </div>
+                        </form>
+            <!--Fin du formulaire-->
+        </div>
+        <!--Fin de la div formulaireChauffeur-->     
+        <div class="col-lg-1"></div>
+        </div>
+        </div>
+        <!--Fin de la div contrainer-->
+   </main>
+   <footer>
+    <div class="accordion accordion-flush container-fluid id=" accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed fondNoir " type="button" data-bs-toggle="collapse"data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <p class="txtFooter">© 2021 Tous droits réservés topchrono.com</p>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse fondNoir"
+                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="row BlocBas">
+                    <div class="col-lg-3 BlocBasContact">
+                        <p class="txtCentre">CONTACT</p>
+                        <p class="txtFooter txtCentre"><i class="fas fa-phone-alt"></i> 09 12 34 56 78</p>
+                        <p class="txtFooter txtCentre"><i class="far fa-envelope"></i> contact@topchrono.fr</p>
+                        <p class="txtFooter txtCentre"><i class="fas fa-map-marker-alt"></i> 187 avenue des champs
+                            élysées 75008
+                            Paris
+                        </p>
+                    </div>
+                    <!--Fin de la div BlocBasContact-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-1 BlocBasInfo">
+                        <p class="txtCentre">INFO</p>
+                        <p class="txtFooter txtCentre"><a href="#">FAQ</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Blog</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">A propos</a></p>
+                    </div>
+                    <!--Fin de la div BlocBasInfo-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2 BlocBasConditions">
+                        <p class="txtCentre">CONDITIONS</p>
+                        <p class="txtFooter txtCentre"><a href="#">Conditions Générales</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Politique de Confidentialité</a></p>
+                        <p class="txtFooter txtCentre"><a href="#">Charte Qualité</a></p>
+                    </div>
+                    <!--Fin de la div BlocBasConditions-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3 BlocBasSocial">
+                        <p class="txtCentre">SOCIAL</p>
+                        <p class="txtFooter txtCentre">Suivez-nous pour bénéficier de réductions spéciales et
+                            voyager toujours
+                            moins
+                            cher.</p>
+                        <p class="txtCentre icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </p>
+                    </div>
+                    <!--Fin de la div BlocBasSocial-->
+                    <div class="col-lg-9"></div>
+                    <div class="col-lg-3">
+                        <p class="txtCentre">
+                            <img class="imgApple" src="img/appleStore.png" alt=" Lien vers AppleStore">
+                            <img class="imgGoogle" src="img/googlePlay.png" alt=" Lien vers GooglePlay">
+                        </p>
+                    </div>
+                </div>
+                <!--Fin de la balise div BlocBas-->
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--Appel des fichiers bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

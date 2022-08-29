@@ -3,6 +3,15 @@ Ce projet est un site fictif de réservation de triporteur, développé en front
 
 Il est possible de naviguer sur les différentes pages via la barre de navigation présente sur toutes les pages.
 
+Voici la page d'accueil : 
+
+
+![Screenshot](./img/readme/index.png)
+##### <center> *Fig.1 page d'accueil* </center> <br>
+
+
+
+
 
 
 ## 1. Installation
